@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Global */
+#card-container {
+  height: 430px;
+  width: 252px;
+}
+/* Header */
+
+/* Body */
+#body-title {
+}
+#body-paragraph {
+  font-size: 13px;
+}
+.body-icon {
+}
+
+/* Footer */
+#footer-img {
+  width: 20px;
+  height: 20px;
+}
+#footer-text {
+  font-size: 13px;
+}
