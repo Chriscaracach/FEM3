@@ -1,29 +1,111 @@
+:root {
+  --SoftBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --MainBg: hsl(217, 54%, 11%);
+  --CardBg: hsl(216, 50%, 16%);
+  --Line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--MainBg) !important;
 }
+/* Utilities */
+.round {
+  border-radius: 10px !important;
+}
+
 /* Global */
 #card-container {
+  margin-top: 100px;
   height: 430px;
   width: 252px;
+  font-family: "Outfit", sans-serif;
+  box-shadow: 10px 10px 27px -8px rgba(0, 0, 0, 0.89);
+  -webkit-box-shadow: 10px 10px 27px -8px rgba(0, 0, 0, 0.89);
+  -moz-box-shadow: 10px 10px 27px -8px rgba(0, 0, 0, 0.89);
+  background-color: var(--CardBg);
 }
 /* Header */
+#header-container {
+  border: none;
+}
+#header-img-container {
+  z-index: 9999;
+}
+#header-img {
+  width: 216px;
+  height: 216px;
+}
+#header-img:hover {
+  opacity: 0.4;
+}
+#header-hover-container {
+  border-radius: 15px !important;
+  width: 216px;
+  height: 216px;
+  top: 16px;
+  left: 16px;
+  background-color: var(--Cyan);
+  z-index: 1;
+}
 
 /* Body */
+#body-container {
+  padding-top: 0;
+  font-weight: 300;
+  height: 30%;
+}
 #body-title {
+  font-weight: 600;
+  color: var(--White);
+}
+#body-title:hover {
+  color: var(--Cyan);
+  cursor: pointer;
 }
 #body-paragraph {
   font-size: 13px;
+  margin-bottom: 0%;
+  color: var(--SoftBlue);
 }
-.body-icon {
+#body-icontext-container {
+  margin-top: 10px;
+  height: 30px;
+}
+#body-text1 {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--Cyan);
+}
+#body-text2 {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--SoftBlue);
 }
 
 /* Footer */
+#footer-container {
+  border-top: 1px solid var(--Line);
+  height: 200px;
+}
 #footer-img {
-  width: 20px;
-  height: 20px;
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 24px;
+  height: 24px;
 }
 #footer-text {
-  font-size: 13px;
+  font-size: 11px;
+  color: var(--SoftBlue);
+}
+#footer-strong {
+  color: var(--White);
+}
+#footer-strong:hover {
+  color: var(--Cyan);
+  cursor: pointer;
 }
